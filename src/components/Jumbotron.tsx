@@ -10,7 +10,8 @@ const Jumbotron = () => {
         style={{
           backgroundImage: `url(${jumboHeader})`,
           height: 600,
-          backgroundSize: "cover"
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed"
         }}
       >
         <div
@@ -20,7 +21,7 @@ const Jumbotron = () => {
           <div className="flex h-full items-center justify-center">
             <div className="text-white p-4">
               <div>
-                <h1 className="mb-4 text-3xl font-extrabold dark:text-white lg:text-4xl">
+                <h1 className="mb-4 text-3xl font-extrabold dark:text-white lg:text-5xl">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
                     Best Meats
                   </span>{" "}
