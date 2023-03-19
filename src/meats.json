@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "A5 MIYAZAKI JAPANESE WAGYU FILET MIGNON (7-8oz. Each)",
+    "img": "filet-mignon.jpeg",
+    "link": "/product/a5-miyazaki-japanese-wagyu-filet-mignon/"
+  },
+  {
+    "id": "2",
+    "name": "A5 MIYAZAKI JAPANESE WAGYU NY STRIP (14-16oz. Each)",
+    "img": "ny-strip.jpeg",
+    "link": "/product/a5-japanese-wagyu-miyazakigyu-ny-strip-bms-9-12/"
+  },
+  {
+    "id": "3",
+    "name": "AUSTRALIAN WAGYU RIBEYE MS 8/9 (14-16oz. Each)",
+    "img": "aus-wagyu.jpg",
+    "link": "/product/australian-wagyu-ribeye-jack-creek-15-16oz/"
+  },
+  {
+    "id": "4",
+    "name": "A5 MIYAZAKI JAPANESE WAGYU RIBEYE (14-16oz.)",
+    "img": "ribeye.jpeg",
+    "link": "/product/test-product-1/"
+  }
+]
