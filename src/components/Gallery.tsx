@@ -15,11 +15,11 @@ const Gallery = () => {
         target="_blank"
       >
         <img
-          className="w-full h-full rounded-lg"
+          className="w-full h-full rounded-lg shadow"
           alt={meat.name}
           src={`/assets/imgs/${meat.img}`}
         />
-        <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
+        <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70 rounded-br-lg rounded-bl-lg">
           <h3 className="text-sm text-white font-bold truncate">{meat.name}</h3>
           <p className="mt-2 text-xs text-gray-300 truncate">
             {meat.description}
@@ -43,11 +43,11 @@ const Gallery = () => {
           target="_blank"
         >
           <img
-            className="w-full h-full rounded-lg"
+            className="w-full h-full rounded-lg shadow"
             alt={meat.name}
             src={`/assets/imgs/${meat.img}`}
           />
-          <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
+          <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70 rounded-br-lg rounded-bl-lg">
             <h3 className="text-sm text-white font-bold truncate">
               {meat.name}
             </h3>
