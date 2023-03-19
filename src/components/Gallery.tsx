@@ -1,33 +1,8 @@
 import React from "react"
 import meats from "../meats.json"
 
-const meatMap = meats.map((meat) => (
-  <div
-    key={meat.id}
-    className="relative hover:scale-105 hover:shadow ease-in-out duration-300"
-  >
-    <a
-      href={`${import.meta.env.VITE_AFF_BASE}${meat.link}?aff=${
-        import.meta.env.VITE_AFF_ID
-      }`}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <img
-        className="w-full h-full rounded-lg"
-        alt={meat.name}
-        src={`./src/assets/imgs/${meat.img}`}
-      />
-      <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
-        <h3 className="text-xl text-white font-bold">{meat.name}</h3>
-        <p className="mt-2 text-sm text-gray-300">{meat.description}</p>
-      </div>
-    </a>
-  </div>
-))
-
-const meatMapReverse = meats
-  .map((meat) => (
+const Gallery = () => {
+  const meatMap = meats.map((meat) => (
     <div
       key={meat.id}
       className="relative hover:scale-105 hover:shadow ease-in-out duration-300"
@@ -42,7 +17,7 @@ const meatMapReverse = meats
         <img
           className="w-full h-full rounded-lg"
           alt={meat.name}
-          src={`./src/assets/imgs/${meat.img}`}
+          src={`/assets/imgs/${meat.img}`}
         />
         <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
           <h3 className="text-xl text-white font-bold">{meat.name}</h3>
@@ -51,9 +26,34 @@ const meatMapReverse = meats
       </a>
     </div>
   ))
-  .reverse()
 
-const Gallery = () => {
+  const meatMapReverse = meats
+    .map((meat) => (
+      <div
+        key={meat.id}
+        className="relative hover:scale-105 hover:shadow ease-in-out duration-300"
+      >
+        <a
+          href={`${import.meta.env.VITE_AFF_BASE}${meat.link}?aff=${
+            import.meta.env.VITE_AFF_ID
+          }`}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            className="w-full h-full rounded-lg"
+            alt={meat.name}
+            src={`/assets/imgs/${meat.img}`}
+          />
+          <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
+            <h3 className="text-xl text-white font-bold">{meat.name}</h3>
+            <p className="mt-2 text-sm text-gray-300">{meat.description}</p>
+          </div>
+        </a>
+      </div>
+    ))
+    .reverse()
+
   return (
     <div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

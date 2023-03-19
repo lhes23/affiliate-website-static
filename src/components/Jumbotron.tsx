@@ -1,5 +1,5 @@
 import React from "react"
-import jumboHeader from "../assets/imgs/jumbo-header.jpg"
+import jumboHeader from "/assets/imgs/jumbo-header.jpg"
 
 const Jumbotron = () => {
   return (
