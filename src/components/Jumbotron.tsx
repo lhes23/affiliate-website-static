@@ -22,7 +22,7 @@ const Jumbotron = () => {
             <div className="text-white p-4">
               <div>
                 <h1 className="mb-4 text-3xl font-extrabold dark:text-white lg:text-5xl">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r to-pink-600 from-purple-400">
                     Best Meats
                   </span>{" "}
                   in San Diego, CA
@@ -34,13 +34,16 @@ const Jumbotron = () => {
               </div>
 
               <a
-                href=""
-                // type="button"
-                className="hover:scale-120 rounded border-2 border-neutral-50 px-7 pt-[10px] pb-[8px] text-xl font-medium uppercase leading-normal text-neutral-50 transition duration-300 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
-                // data-te-ripple-init
-                // data-te-ripple-color="light"
+                href={`${import.meta.env.VITE_AFF_BASE}?aff=${
+                  import.meta.env.VITE_AFF_ID
+                }`}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="rounded border-2 border-gra px-7 pt-[10px] pb-[8px] text-xl font-medium uppercase leading-normal text-neutral-50 transition duration-300 ease-in-out hover:border-neutral-100 hover:bg-gradient-to-tr from-purple-500 to-pink-500 hover:text-white focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
               >
-                Shop Now
+                <span className="hover:text-white text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                  SHOP NOW
+                </span>
               </a>
             </div>
           </div>
