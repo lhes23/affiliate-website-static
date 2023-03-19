@@ -20,8 +20,10 @@ const Gallery = () => {
           src={`/assets/imgs/${meat.img}`}
         />
         <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
-          <h3 className="text-xl text-white font-bold">{meat.name}</h3>
-          <p className="mt-2 text-sm text-gray-300">{meat.description}</p>
+          <h3 className="text-sm text-white font-bold truncate">{meat.name}</h3>
+          <p className="mt-2 text-xs text-gray-300 truncate">
+            {meat.description}
+          </p>
         </div>
       </a>
     </div>
@@ -46,8 +48,12 @@ const Gallery = () => {
             src={`/assets/imgs/${meat.img}`}
           />
           <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
-            <h3 className="text-xl text-white font-bold">{meat.name}</h3>
-            <p className="mt-2 text-sm text-gray-300">{meat.description}</p>
+            <h3 className="text-sm text-white font-bold truncate">
+              {meat.name}
+            </h3>
+            <p className="mt-2 text-xs text-gray-300 truncate">
+              {meat.description}
+            </p>
           </div>
         </a>
       </div>
