@@ -16,6 +16,7 @@ const Gallery = () => {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
+                  <h2>Sample Text</h2>
                   <img
                     className="w-full h-full rounded-lg ease-in-out duration-300 hover:scale-105 hover:shadow"
                     alt={meat.name}
