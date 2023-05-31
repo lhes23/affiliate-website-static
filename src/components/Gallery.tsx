@@ -8,9 +8,9 @@ const Gallery = () => {
       className="relative hover:scale-105 hover:shadow ease-in-out duration-300"
     >
       <a
-        href={`${import.meta.env.VITE_AFF_BASE}${meat.link}?aff=${
-          import.meta.env.VITE_AFF_ID
-        }`}
+        href={`${import.meta.env.VITE_AFF_BASE}${meat.link}?${
+          import.meta.env.VITE_AFF_PARAM
+        }=${import.meta.env.VITE_AFF_ID}`}
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -36,9 +36,9 @@ const Gallery = () => {
         className="relative hover:scale-105 hover:shadow ease-in-out duration-300"
       >
         <a
-          href={`${import.meta.env.VITE_AFF_BASE}${meat.link}?aff=${
-            import.meta.env.VITE_AFF_ID
-          }`}
+          href={`${import.meta.env.VITE_AFF_BASE}${meat.link}?${
+            import.meta.env.VITE_AFF_PARAM
+          }=${import.meta.env.VITE_AFF_ID}`}
           rel="noopener noreferrer"
           target="_blank"
         >

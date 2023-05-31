@@ -34,9 +34,9 @@ const Jumbotron = () => {
               </div>
 
               <a
-                href={`${import.meta.env.VITE_AFF_BASE}?aff=${
-                  import.meta.env.VITE_AFF_ID
-                }`}
+                href={`${import.meta.env.VITE_AFF_BASE}?${
+                  import.meta.env.VITE_AFF_PARAM
+                }=${import.meta.env.VITE_AFF_ID}`}
                 rel="noopener noreferrer"
                 target="_blank"
                 className="rounded border-2 border-gra px-7 pt-[10px] pb-[8px] text-xl font-medium uppercase leading-normal text-neutral-50 transition duration-300 ease-in-out hover:border-neutral-100 hover:bg-gradient-to-tr from-purple-500 to-pink-500 hover:text-white focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
