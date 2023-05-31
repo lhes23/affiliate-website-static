@@ -4,6 +4,7 @@ import Footer from "./components/Footer"
 import bgWallpaper from "/assets/imgs/bg-wallpaper.jpg"
 
 function App() {
+  document.title = import.meta.env.VITE_SITE_NAME
   return (
     <div
       className=""
