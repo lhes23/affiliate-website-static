@@ -20,12 +20,12 @@ const Gallery = () => {
   }, [])
 
   return (
-    <div>
+    <>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {meats &&
           meats.map((meat: any, i: number) => <Card key={i} meat={meat} />)}
       </div>
-    </div>
+    </>
   )
 }
 
